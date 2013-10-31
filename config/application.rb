@@ -15,6 +15,9 @@ end
 
 module Ideacamp
   class Application < Rails::Application
+    config.mongoid.logger = Logger.new($stdout, :warn)
+    config.mongoid.preload_models = false
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

@@ -1,0 +1,22 @@
+{
+  "app/models/*.rb": {
+    "affinity": "model",
+    "test": "spec/models/%s_spec.rb",
+    "related": "app/models/%s.rb"
+  },
+  "app/controllers/*.rb": {
+    "affinity": "controller",
+    "test": "spec/controllers/%s_spec.rb",
+    "related": "app/controllers/%s.rb"
+  },
+  "app/commands/*.rb": {
+    "affinity": "command",
+    "test": "spec/commands/%s_spec.rb",
+    "related": "app/commands/%s.rb"
+  },
+  "lib/*.rb": {
+    "affinity": "lib",
+    "test": "spec/lib/%s_spec.rb",
+    "related": "lib/%s.rb"
+  }
+}

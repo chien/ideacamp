@@ -1,0 +1,12 @@
+.block
+  .category
+    .a-date
+      = article.published_at.to_date
+  .article
+    .a-title
+      = link_to article.title, article.url
+    .a-author
+      = "By #{article.author}"
+    .a-content
+      = article.summary.html_safe
+

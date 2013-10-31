@@ -34,8 +34,14 @@ group :test do
   gem "capybara-webkit"
 end
 
+group :development do
+  gem 'pry'
+end
+
+gem 'haml-rails'
 gem 'jquery-rails'
 gem 'feedzirra'
+gem 'kaminari'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
