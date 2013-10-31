@@ -5,8 +5,7 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
+gem 'mongoid'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,7 +19,23 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+  gem 'faker'
+  gem 'factory_girl_rails', "~> 4.0"
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-core', "2.12.0"
+  gem 'rspec-mocks-extensions'
+  gem 'database_cleaner'
+  gem 'cucumber-rails', :require => false
+  gem "capybara-webkit"
+end
+
 gem 'jquery-rails'
+gem 'feedzirra'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
