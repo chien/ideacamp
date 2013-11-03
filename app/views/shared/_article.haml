@@ -7,6 +7,6 @@
       = link_to article.title, article.url
     .a-author
       = "By #{article.author}"
-    -# .a-content
-      -# = (article.summary || article.content).try(:html_safe)
+    .a-content
+      = (article.summary || article.content).try(:html_safe)
 

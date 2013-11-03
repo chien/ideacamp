@@ -1,4 +1,4 @@
 .articles
   - @articles.each do |article|
-    = render "article", article: article
+    = render "shared/article", article: article
 %a.jscroll-next{ href: articles_path(page: params[:page].to_i+1) }
