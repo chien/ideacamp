@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "underscore": "~1.4.4",
+    "jquery.jscroll": "2.1.1",
     "bootstrap": "3.0.1"
   },
   "ignore": [

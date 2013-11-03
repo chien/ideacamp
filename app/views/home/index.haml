@@ -1,6 +1,6 @@
-.content.col-lg-4
+.content.col-lg-4.infinite-scroll
   .articles
     - @articles.each do |article|
       = render "article", article: article
-  = paginate @articles
+  %a.jscroll-next{ href: articles_path(page: params[:page].to_i+1) }
 %iframe#reader.col-lg-8

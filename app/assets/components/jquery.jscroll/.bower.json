@@ -1,0 +1,14 @@
+{
+  "name": "jquery.jscroll",
+  "homepage": "https://github.com/pklauzinski/jscroll",
+  "version": "2.1.1",
+  "_release": "2.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.1",
+    "commit": "77430800219b0784e6d43d880e41b2e2c0cf89fb"
+  },
+  "_source": "git://github.com/pklauzinski/jscroll.git",
+  "_target": "2.1.1",
+  "_originalSource": "jquery.jscroll"
+}
