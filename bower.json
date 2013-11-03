@@ -1,0 +1,15 @@
+{
+  "name": "ideacamp",
+  "version": "0.0.1",
+  "dependencies": {
+    "underscore": "~1.4.4",
+    "bootstrap": "3.0.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

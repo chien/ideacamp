@@ -1,6 +1,6 @@
-.articles
-  - @articles.each do |article|
-    = render "article", article: article
-= paginate @articles
-
-
+.content.col-lg-4
+  .articles
+    - @articles.each do |article|
+      = render "article", article: article
+  = paginate @articles
+%iframe#reader.col-lg-8
