@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.recent.page(params[:page]).per(10)
+    @page = (params[:page] || 1).to_i
+    @articles = Article.recent.page(@page)
     render layout: false
   end
 end

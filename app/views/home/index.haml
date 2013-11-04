@@ -2,5 +2,5 @@
   .articles
     - @articles.each do |article|
       = render "shared/article", article: article
-  %a.jscroll-next{ href: articles_path(page: params[:page].to_i+1) }
+  %a.jscroll-next{ href: articles_path(page: @page+1) }
 %iframe#reader

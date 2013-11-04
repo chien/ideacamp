@@ -58,8 +58,8 @@ feed_urls = ["http://feeds.feedburner.com/AVcVentureCapitalAndTechnology",
              "http://feeds.feedburner.com/blogs/sSCW",
              "http://feeds.feedburner.com/EricFriedman",
              "http://feeds.feedburner.com/VentureExplorer",
-             "http://www.vcaonline.com/news/rss/index.asp"
-
+             "http://www.vcaonline.com/news/rss/index.asp",
+             "http://fullstart.com/feed"
 ]
 
 # http://feeds.feedburner.com/VC_Adventure fetch failed!
