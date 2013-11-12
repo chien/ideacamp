@@ -46,6 +46,7 @@ class RSSFeedFetcher
   end
 
   def filters
-    [VentureBeatFilter]
+    [VentureBeatFilter,
+     NextWebFilter]
   end
 end

@@ -3,4 +3,6 @@
     - @articles.each do |article|
       = render "shared/article", article: article
   %a.jscroll-next{ href: articles_path(page: @page+1) }
-%iframe#reader
+.reader-container
+  .close.close-reader X
+  %iframe#reader

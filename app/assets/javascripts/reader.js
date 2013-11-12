@@ -1,10 +1,24 @@
 $( document ).ready(function() {
+  function hideCloseReaderButton() {
+    $(".close-reader").hide();
+  }
+
+  function showCloseReaderButton() {
+    $(".close-reader").show();
+  }
+
   function hideArticleSummary() {
     if($("#reader").hasClass("col-lg-8")) {
       $(".content").removeClass("col-lg-12");
       $(".content").addClass("col-lg-4");
       $(".a-content").hide();
     }
+  }
+
+  function showArticleSummary() {
+    $(".content").addClass("col-lg-12");
+    $(".content").removeClass("col-lg-4");
+    $(".a-content").show();
   }
 
   function monitorArticleClick() {
@@ -15,8 +29,20 @@ $( document ).ready(function() {
       hideArticleSummary()
       var el = document.getElementById('reader');
       el.src = $(this).attr("href");
+      showCloseReaderButton();
     });
   }
+
+  function hideReader() {
+    $("#reader").remove();
+    $(".reader-container").append("<iframe id='reader' />");
+    showArticleSummary();
+  }
+
+  $(".close-reader").on("click", function(event){
+    hideReader();
+    hideCloseReaderButton();
+  });
 
   function monitorInfiniteScroll() {
     hideArticleSummary();
