@@ -58,5 +58,6 @@ $( document ).ready(function() {
   $('.infinite-scroll').on("jscroll.loaded", monitorInfiniteScroll);
 
   monitorArticleClick();
+  hideCloseReaderButton();
 
 });
