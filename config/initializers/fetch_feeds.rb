@@ -1,4 +1,4 @@
-feed_urls = ["http://feeds.feedburner.com/AVcVentureCapitalAndTechnology",
+FEED_URLS = ["http://feeds.feedburner.com/AVcVentureCapitalAndTechnology",
              "http://feeds.feedburner.com/guykawasaki/Gypm",
              "http://feeds.feedburner.com/FeldThoughts",
              "http://feeds.feedburner.com/BothSidesOfTheTable",
@@ -83,5 +83,3 @@ feed_urls = ["http://feeds.feedburner.com/AVcVentureCapitalAndTechnology",
 # http://500hats.typepad.com/
 # http://bijansabet.com/
 # http://firstround.com/blog
-
-RSSFeedFetcher.new(feed_urls).execute
