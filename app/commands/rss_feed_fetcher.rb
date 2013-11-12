@@ -9,14 +9,15 @@ class RSSFeedFetcher
     feeds.each do |url, feed_burner|
       begin
         feed_burner.entries.each do |entry|
-          article = Article.find_or_initialize_by(url: entry.url)
+          filtered_entry = filtered_entry_for(url, entry)
+          article = Article.find_or_initialize_by(url: filtered_entry.url)
           article.attributes = {
-            title: entry.title,
-            content: entry.content,
-            url: entry.url,
-            author: entry.author,
-            summary: entry.summary,
-            published_at: entry.published
+            title: filtered_entry.title,
+            content: filtered_entry.content,
+            url: filtered_entry.url,
+            author: filtered_entry.author,
+            summary: filtered_entry.summary,
+            published_at: filtered_entry.published
           }
           article.save!
         end
@@ -29,4 +30,22 @@ class RSSFeedFetcher
   private
 
   attr_reader :feed_urls
+
+  def filtered_entry_for(feed_url, entry)
+    if filter = filter_for(feed_url)
+      filter.new(entry)
+    else
+      entry
+    end
+  end
+
+  def filter_for(feed_url)
+    filters.detect do |filter|
+      filter.valid_for?(feed_url)
+    end
+  end
+
+  def filters
+    [VentureBeatFilter]
+  end
 end

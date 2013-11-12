@@ -36,12 +36,14 @@ end
 
 group :development do
   gem 'pry'
+  gem 'zeus'
 end
 
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'feedzirra'
 gem 'kaminari'
+gem 'nokogiri'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
