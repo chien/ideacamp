@@ -59,27 +59,30 @@ FEED_URLS = ["http://feeds.feedburner.com/AVcVentureCapitalAndTechnology",
              "http://feeds.feedburner.com/EricFriedman",
              "http://feeds.feedburner.com/VentureExplorer",
              "http://www.vcaonline.com/news/rss/index.asp",
-             "http://fullstart.com/feed"
+             "http://fullstart.com/feed",
+             "http://feeds.feedblitz.com/SethsBlog",
+             "http://www.engadget.com/rss.xml",
+             "http://allthingsd.com/feed"
 ]
 
-# http://feeds.feedburner.com/VC_Adventure fetch failed!
-# http://feeds2.feedburner.com/TheMogulMomBlog fetch failed!
-# http://www.scalevp.com/feed fetch failed!
-# http://feeds.feedburner.com/startupnation/svep fetch failed!
-# http://ontheflyingbridge.wordpress.com/
-#http://www.bitsofcents.com/
-#http://ryanspoon.com/blog/
-#http://www.nea.com/blog
-# http://jasonball.com/2007/05/17/techbytes-en-espaol/
-# http://www.purevc.com/pure_vc/
-# http://www.vcaonline.com/
-# http://www.redherring.com/Home/
-# http://www.usv.com/
-# http://jeffnolan.com/wp/
-# https://vcexperts.com
-# www.venturecompany.com
-# www.venturemedia.nl
-# http://abovethecrowd.com/
-# http://500hats.typepad.com/
-# http://bijansabet.com/
-# http://firstround.com/blog
+# # http://feeds.feedburner.com/VC_Adventure fetch failed!
+# # http://feeds2.feedburner.com/TheMogulMomBlog fetch failed!
+# # http://www.scalevp.com/feed fetch failed!
+# # http://feeds.feedburner.com/startupnation/svep fetch failed!
+# # http://ontheflyingbridge.wordpress.com/
+# #http://www.bitsofcents.com/
+# #http://ryanspoon.com/blog/
+# #http://www.nea.com/blog
+# # http://jasonball.com/2007/05/17/techbytes-en-espaol/
+# # http://www.purevc.com/pure_vc/
+# # http://www.vcaonline.com/
+# # http://www.redherring.com/Home/
+# # http://www.usv.com/
+# # http://jeffnolan.com/wp/
+# # https://vcexperts.com
+# # www.venturecompany.com
+# # www.venturemedia.nl
+# # http://abovethecrowd.com/
+# # http://500hats.typepad.com/
+# # http://bijansabet.com/
+# # http://firstround.com/blog
