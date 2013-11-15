@@ -25,7 +25,8 @@ $( document ).ready(function() {
     $(".articles .a-title a").on("click", function(event){
       event.stopPropagation();
       event.preventDefault();
-      $("#reader").addClass("col-lg-8");
+      $("#reader").addClass("col-lg-8").
+        css("min-height", window.screen.availHeight - 70);
       hideArticleSummary()
       var el = document.getElementById('reader');
       el.src = $(this).attr("href");
